@@ -60,7 +60,7 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt='/'
-              width='125'
+              width='200'
               height='50'
               className='cursor-pointer'
             />
@@ -84,8 +84,12 @@ const Navbar = () => {
               <Link href='/resume'>Resume</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href='/blog'>Blog</Link>
+            </li>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#contact'>Contact</Link>
             </li>
+            
           </ul>
           {/* Hamburger Icon */}
           <div
@@ -119,8 +123,8 @@ const Navbar = () => {
                 <a>
                   <Image
                     src={NavLogo}
-                    width='87'
-                    height='35'
+                    width='100'
+                    height='30'
                     alt='/'
                   />
                 </a>
@@ -134,7 +138,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Let&#39;s build something legendary together
+                Let&#39;s build something epic together
               </p>
             </div>
           </div>
@@ -165,6 +169,11 @@ const Navbar = () => {
                   Resume
                 </li>
               </Link>
+              <Link href='/blog'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Projects
+                </li>
+              </Link>
               <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
@@ -177,7 +186,7 @@ const Navbar = () => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/junkevin06/'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -186,7 +195,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/junkevin88'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -194,7 +203,7 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <Link href='/#contact'>
+                <Link href='mailto:junkevin88@gmail.com'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
