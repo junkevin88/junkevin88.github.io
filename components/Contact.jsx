@@ -7,10 +7,12 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
 
+
 const Contact = () => {
   return (
+    
     <div id='contact' className='w-full lg:h-screen'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
+      <div className='max-w-[1240px] m-auto px-2 py-24 '>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>
           Contact
         </p>
@@ -27,8 +29,8 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2'>Clint Briley</h2>
-                <p>Front-End Developer</p>
+                <h2 className='py-2'>Jun Kevin</h2>
+                <p>Back-End Developer</p>
                 <p className='py-4'>
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
@@ -38,7 +40,7 @@ const Contact = () => {
                 <p className='uppercase pt-8'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
-                    href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                    href='https://www.linkedin.com/in/junkevin06/'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -47,7 +49,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href='https://github.com/fireclint'
+                    href='https://github.com/junkevin88'
                     target='_blank'
                     rel='noreferrer'
                   >
@@ -56,9 +58,15 @@ const Contact = () => {
                     </div>
                   </a>
 
+                  <a
+                    href='mailto:junkevin88@gmail.com'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineMail />
                   </div>
+                  </a>
                   <Link href='/resume'>
                     <a>
                       <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
@@ -86,7 +94,7 @@ const Contact = () => {
                       className='border-2 rounded-lg p-3 flex border-gray-300'
                       type='text'
                       name='name'
-                    />
+                      />
                   </div>
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>

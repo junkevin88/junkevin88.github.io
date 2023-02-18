@@ -2,7 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-const resume = () => {
+
+const blog = () => {
   return (
     <>
       <Head>
@@ -187,4 +188,6 @@ const resume = () => {
   );
 };
 
-export default resume;
+
+export default blog;
+
