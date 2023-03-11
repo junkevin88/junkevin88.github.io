@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
           <h2 className='py-4'>Who I Am</h2>
-          <p className='py-2 text-gray-600'>
+          <p className='py-2 text-gray-600 text-justify'>
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s and other backend technologies. I’m
             passionate about learning new technologies and understand there is
@@ -22,7 +22,7 @@ const About = () => {
             needed. I believe that being a great developer is not using one
             specific language, but choosing the best tool for the job.
           </p>
-          <p className='py-2 text-gray-600'>
+          <p className='py-2 text-gray-600 text-justify'>
             I started web developement in 2013 managing multiple e-commerce
             websites on CMS platforms such as WordPress, BigCommerce, and
             Shopify. I have experience working directly with clients and taking

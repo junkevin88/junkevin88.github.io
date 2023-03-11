@@ -85,10 +85,10 @@ const Navbar = () => {
               <Link href='/resume' >Resume</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/blog' >Blog</Link>
+              <Link href='/#contact' scroll = {false}>Contact</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/#contact' scroll = {false}>Contact</Link>
+              <Link href='https://medium.com/@junkevin' >Blog</Link>
             </li>
             
           </ul>
