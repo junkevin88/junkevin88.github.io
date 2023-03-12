@@ -17,17 +17,17 @@ const resume = () => {
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
         <h2 className='text-center'>Resume</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
+          <h2 className='text-center'>Jun Kevin</h2>
           <div className='flex'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/junkevin06/'
               target='_blank'
               rel='noreferrer'
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/junkevin88'
               target='_blank'
               rel='noreferrer'
             >
@@ -48,7 +48,7 @@ const resume = () => {
             <p>Complex Problem Solving</p>
           </div>
         </div>
-        <p>
+        <p className='text-justify'>
           Analytical, innovative, and motivated web development professional
           with experience in customer service, team leadership, and
           organizational effectiveness in fast-paced and challenging
@@ -64,24 +64,30 @@ const resume = () => {
         <div className='text-center py-4'>
           <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
           <p className='py-2'>
-            <span className='font-bold'>Technical Skills</span>
-            <span className='px-2'>|</span>Front-End Web Developer
-            <span className='px-2'>|</span> HTML
-            <span className='px-2'>|</span>CSS
+            <span className='font-bold'>IT Technical Skills</span>
+            <span className='px-2'>|</span>Backend Engineer
+            <span className='px-2'>|</span>Java 
+            <span className='px-2'>|</span>Spring Boot 
+            <span className='px-2'>|</span>PHP 
+            <span className='px-2'>|</span>Laravel
             <span className='px-2'>|</span>Javascript
             <span className='px-2'>|</span>React
             <span className='px-2'>|</span>Next JS
+            <span className='px-2'>|</span>Node JS
             <span className='px-2'>|</span>SQL
             <span className='px-2'>|</span>NoSQL
-            <span className='px-2'>|</span>Redux
             <span className='px-2'>|</span>Tailwind
             <span className='px-2'>|</span> Firebase
             <span className='px-2'>|</span> RESTAPI
           </p>
           <p className='py-2'>
-            <span className='font-bold'>Amazon Web Services</span>
-            <span className='px-2'>|</span>Amazon Web Services Cloud
-            Practitioner
+            <span className='font-bold'>Other Technical Skills</span>
+            <span className='px-2'>|</span>Financial Accounting
+            <span className='px-2'>|</span>Taxation and E-SPT
+            <span className='px-2'>|</span>MS Office
+            <span className='px-2'>|</span>Google Suite
+            <span className='px-2'>|</span>Accounting Software
+            <span className='px-2'>|</span>ERP Software
           </p>
         </div>
 
@@ -89,16 +95,16 @@ const resume = () => {
           Professional Experience
         </h5>
         {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
+        <div className='py-6 text-justify'>
+          <p className='italic '>
             <span className='font-bold italic'>
-            INFINITE TECH
+            HashMicro Pte. Ltd.
             </span>
-            <span className='px-2'>|</span>Dallas, TX
+            <span className='px-2'>|</span>Jakarta, Indonesia
           </p>
           <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
+            <li >
               Ensured comprehensive mobile responsive UI layouts with
               understanding of HTML, CSS, and JavaScript.
             </li>
