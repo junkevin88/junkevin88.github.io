@@ -102,7 +102,7 @@ const resume = () => {
             </span>
             <span className='px-2'>|</span>Jakarta, Indonesia
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
+          <p className='py-1 italic'>ERP Consultant (Aug 2022 - Dec 2022)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li >
               Ensured comprehensive mobile responsive UI layouts with

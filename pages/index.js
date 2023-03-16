@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Jun | Back-End Developer</title>
-        <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
+        <meta name="description" content="I’m a back-end developer specializing in building powerfull applications." />
         <link rel="icon" href="/fav.png" />
       </Head>
     <Main />
