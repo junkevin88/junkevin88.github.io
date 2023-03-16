@@ -30,7 +30,7 @@ const About = () => {
             time I run Code Commerce, a Youtube channel where I teach web
             developement and various front-end technologies.
           </p>
-          <Link href='/#projects'>
+          <Link href='/#projects' scroll = {false}>
             <p className='py-2 text-gray-300 underline cursor-pointer'>
               Check out some of my latest projects.
             </p>
