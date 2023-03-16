@@ -67,7 +67,7 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+      <div className='flex justify-between items-center w-full h-full p-2 2xl:px-16'>
         <Link href='/'>
           <a>
             <Image
@@ -120,7 +120,7 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+          nav ? 'md:hidden fixed left-0 top-0 p-10 w-full h-screen bg-black/70' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
         }
       >
         {/* Side Drawer Menu */}
@@ -128,7 +128,7 @@ const Navbar = () => {
           className={
             nav
               ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ff69b4] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+              : 'fixed left-[-100%] w-[75%] sm:w-[60%] md:w-[45%] top-0 p-10 ease-in duration-500'
           }
         >
           <div>
