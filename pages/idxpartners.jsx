@@ -26,14 +26,8 @@ const idxpartners = () => {
         <div className='col-span-4'>
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
-            I built this application in React JS and is hosted on GitHub pages.
-            This app features user authentication with firebase as well as the
-            firestore cloud storage database. This application is pulling movie
-            data from an the IMDB movie API and displaying different categories.
-            It features horizontal sliding and a featured selection. The
-            useContext hook is also being implemented for app-wide state
-            management.
+          <p className='text-justify'>
+          This is a final project of one month virtual internship provided by id/x partners and Rakamin Academy. Build a credit scoring model using machine learning for loan company. The dataset is provided by id/x partners. The model is built using Python and Jupyter Notebook. The model is evaluated using F1 Score and AUC Score. 
           </p>
           <a
             href='https://github.com/junkevin88/project_idxpartners'

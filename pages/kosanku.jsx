@@ -27,7 +27,7 @@ const kosanku = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-          This project is a backend development using the Java programming language and Spring-boot framework. It is final project for SYNRGY ACADEMY, where We were assigned to develop this app from start to finish.
+          This project is a backend development using the Java programming language and Spring-boot framework. It is final project for SYNRGY ACADEMY, where We were assigned to develop this app from start to finish. This app is a platform for finding and renting a room (kost) in Indonesia. This app is built using Java Spring Boot, Spring Security, Thymeleaf, Cloudinary, Heroku, Railway, and PostgreSQL.
           </p>
 
           <ul>Feature:</ul>

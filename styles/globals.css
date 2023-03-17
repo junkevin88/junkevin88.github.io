@@ -40,7 +40,7 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#ff69b4] to-[#FFB6C1] text-white;
+    @apply shadow-xl shadow-gray-600 rounded-xl uppercase bg-gradient-to-r from-[#ff69b4] to-[#FFB6C1] text-white;
   }
 }
 

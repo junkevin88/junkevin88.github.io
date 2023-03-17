@@ -49,15 +49,11 @@ const resume = () => {
           </div>
         </div>
         <p className='text-justify'>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
+        Jun Kevin is a recent accounting graduate with a deep understanding of accounting, finance, and taxation. He is skilled in Java (Spring Boot), PHP (Laravel), and JavaScript (React.js, Next.js, Node.js), with experience in Enterprise Resource Planning and FAT (Finance, Accounting and Tax).
+        </p>
+
+        <p className='text-justify'>
+        He is passionate about programming and interested in pursuing a career in IT roles. With strong problem-solving abilities and a willingness to learn, he is a valuable asset to any technical team. Currently, he is seeking opportunities to combine his programming skills and accounting knowledge to excel in a career as a programmer, analyst, or consultant.
         </p>
 
         {/* Skills */}
@@ -105,20 +101,19 @@ const resume = () => {
           <p className='py-1 italic'>ERP Consultant (Aug 2022 - Dec 2022)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li >
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+            Work on 2 concurrent projects for a manufacturing company with 2 branches and a construction company with 1 parent and 11 subsidiaries
             </li>
             <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
+            Attend weekly client meetings to provide progress updates on projects and gather feedback
             </li>
             <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
+            Demonstrate proficiency in 5 modules including accounting, manufacturing, purchasing, construction, and sales
             </li>
             <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
+            Collaborate with cross-functional teams to ensure seamless integration of ERP systems
+            </li>
+            <li>
+            Stay up-to-date with industry trends and best practices to continuously improve ERP solutions for clients
             </li>
           </ul>
         </div>
@@ -127,22 +122,21 @@ const resume = () => {
         {/* Personal Experience */}
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold italic'>
-              Teaching & Mentoring Web Development
+          <span className='font-bold italic'>
+            PT. Catatbuku Indonesia
             </span>
-            <span className='px-2'>|</span>Dallas, TX
+            <span className='px-2'>|</span>Jakarta, Indonesia
           </p>
-          <p className='py-1 italic'>Code Commerce - Youtube Channel (2021 - Current)</p>
+          <p className='py-1 italic'>Accountant (Jan 2022 - Jan 2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
-              In 2021 I started “Code Commerce”, a YouTube channel focused on
-              sharing what I’m learning in web development, specifically
-              front-end development.
+            Produced financial and tax report, analyzed and evaluated financial performance of 2 manufacturing SMEs from January to June
             </li>
             <li>
-              Private 1 on 1 Zoom coaching calls related to web development.
-              More specifically debugging, teaching basic web development
-              concepts and code reviews.
+            Guide clients for the computed journal in accounting software and built calculator for a client using Excel to help them prioritize their financial projection
+            </li>
+            <li>
+            Maintained company general ledger monthly close processes and account reconciliations through 20% YoY average revenue growth
             </li>
           </ul>
         </div>
@@ -155,38 +149,13 @@ const resume = () => {
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
+          <span className='font-bold italic'>
+            SYNRGY Academy Batch 5
+            </span>
+            <span className='px-2'>|</span>Indonesia
           </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
-            </li>
-            <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
-            </li>
-            <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
-            </li>
-            <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
-            </li>
-            <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
-            </li>
-          </ul>
+          <p className='py-1 italic'>Backend Engineering Java (Sep 2022 – Feb 2023)</p>
+            <p className ='text-justify'>As a Backend Engineering Bootcamp graduate, I have gained hands-on experience in developing backend applications using Java programming language and Spring Boot framework. I have also acquired knowledge of various databases such as PostgreSQL, MySQL, SQLite, and NoSQL databases such as MongoDB. In addition, I have experience working with Apache Kafka for building scalable and distributed applications and implementing software design patterns such as MVC. I am also familiar with designing, implementing and deploying microservices-based applications and have experience using version control tools such as Git. Moreover, I have learned how to containerize and deploy applications using Docker for faster and easier deployment to different environments. I am now excited to apply my skills and knowledge to real-world projects in the industry.</p>
         </div>
       </div>
     </>

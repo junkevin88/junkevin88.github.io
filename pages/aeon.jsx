@@ -26,16 +26,8 @@ const aeon = () => {
         <div className='col-span-4'>
           <p>Project</p>
           <h2>Overview</h2>
-          <p>
-            I built this app to demonstrate knowledge working in React JS and
-            accessing API endpoints. This app was built using React JS and is
-            hosted on Firebase. This application supports user authentication
-            using firebase. Users are able to create a new account using their
-            email address and can then sign in to save coins to a user specific
-            list. This is made possble by creating a firestore cloud storage
-            database at the time of user registration. Another feature of this
-            application is dynamic routing through the &quot;React Router DOM&quot;
-            package. This application was built using the Coin Gecko API.
+          <p className='text-justify'>
+            This is a final project of one month virtual internship provided by AEON Credit Services and Rakamin Academy. Build a REST API for HRIS using java spring boot and many other technologies. The project is divided into 3 phases, each phase has a different task. The first phase is to build a REST API for HRIS, the second phase is to build a REST API for the company’s internal system, and the third phase is to build a REST API for the company’s internal system and integrate it with the first phase.   
           </p>
           <a
             href='https://github.com/junkevin88/AEON-Backend-Java'
