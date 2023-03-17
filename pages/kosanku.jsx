@@ -4,7 +4,7 @@ import kosankuImg from '../public/assets/projects/kosanku.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const property = () => {
+const kosanku = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -29,7 +29,7 @@ const property = () => {
           <p>
           This project is a backend development using the Java programming language and Spring-boot framework. It is final project for SYNRGY ACADEMY, where We were assigned to develop this app from start to finish.
           </p>
-          
+
           <ul>Feature:</ul>
             <li>Feature A (Authentication): Provides list of authentication API (including oauth) using Spring Security and Thymeleaf</li>
 <li>Feature B (Product): Provide search, filter and sorting product (kost), add favorite feature</li>
@@ -105,4 +105,4 @@ const property = () => {
   );
 };
 
-export default property;
+export default kosanku;

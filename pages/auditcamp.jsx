@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import twitchImg from '../public/assets/projects/twitch.jpg';
+import auditcampImg from '../public/assets/projects/auditcamp.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const twitch = () => {
+const auditcamp = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -13,12 +13,12 @@ const twitch = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={twitchImg}
+          src={auditcampImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2'>Twitch UI</h2>
-          <h3>Next JS / Tailwind / Next Auth</h3>
+          <h2 className='py-2'>Auditcamp</h2>
+          <h3>Laravel | Midtrans | Heroku</h3>
         </div>
       </div>
 
@@ -36,14 +36,7 @@ const twitch = () => {
             the Image component, built in routing, and Next/Auth Context.
           </p>
           <a
-            href='https://twitch-nextjs-tailwind.vercel.app/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          </a>
-          <a
-            href='https://github.com/fireclint/twitch-nextjs-tailwind'
+            href='https://github.com/junkevin88/AuditCamp'
             target='_blank'
             rel='noreferrer'
           >
@@ -51,27 +44,33 @@ const twitch = () => {
           </a>
 
         </div>
-        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
+        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-100 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Technologies</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Next.JS
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> PHP
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Laravel
+              </p>
+              <p className='text-gray-100 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Tailwind
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Javascript
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Blade Template
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Next Auth
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Laravel Breeze
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Github Auth
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Laravel Socialite
               </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> Google Auth
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Midtrans
+              </p>
+              <p className='text-gray-100 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Heroku
               </p>
             </div>
           </div>
@@ -84,4 +83,4 @@ const twitch = () => {
   );
 };
 
-export default twitch;
+export default auditcamp;
