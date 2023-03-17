@@ -3,6 +3,11 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import dynamic from 'next/dynamic';
+import Typewriter from 'typewriter-effect';
+
+
+
 
 const Main = () => {
   return (
@@ -12,10 +17,21 @@ const Main = () => {
           <h1 className='py-4 text-gray-300'>
             Hi, I&#39;m <span className='text-[#ff69b4]'> Jun</span>
           </h1>
-          <h1 className='py-2 text-gray-300'>A Back-end Developer</h1>
+
+
+          <h1 className='py-2 text-gray-300'>
+          <Typewriter
+        options={{
+          strings: ['Backend Developer', 'Accountant', 'ERP Consultant', 'Lifelong Learner'],
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 50,
+          delay: 100,
+        }}
+      />
+          </h1>
           <p className='py-4 text-gray-200 sm:max-w-[70%] m-auto'>
-            I’m focused on building back-end technologies
-            integrating responsive front-end applications and mobile.
+            I’m focused on developing back-end technologies and integrating finance world to IT. I’m also interested in learning to build something that is useful for others.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a
