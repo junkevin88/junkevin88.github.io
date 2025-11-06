@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Researcher Portfolio - Academic Publications and Research"
+    />
+    <title>Researcher Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Prevent flash of unstyled content by applying theme immediately
+      (function () {
+        const theme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#home" class="logo">JUN KEVIN</a>
+          <div class="nav-menu-wrapper">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode"
+            >
+              <span id="themeIcon">🌙</span>
+            </button>
+            <button
+              class="mobile-menu-toggle"
+              id="mobileMenuToggle"
+              aria-label="Toggle menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#publications" class="nav-link">Publications</a></li>
+              <li><a href="#resume" class="nav-link">Resume</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Jun Kevin (萧大慧)</h1>
+            <p class="hero-subtitle">
+              Software Engineer @ BCA | Master's Student @ UPH
+            </p>
+            <p class="hero-description">
+              Master's student in Informatics at Universitas Pelita Harapan,
+              specializing in Artificial Intelligence, Reinforcement Learning,
+              and Quantitative Finance. Skilled in building scalable Python and
+              Java systems. Experienced in software engineering, research
+              publication, and data-driven innovation.
+            </p>
+            <div class="hero-buttons">
+              <a href="#publications" class="btn btn-primary"
+                >View Publications</a
+              >
+              <a href="#resume" class="btn btn-secondary">Download Resume</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="1713232226146.jpg"
+              alt="Jun Kevin"
+              class="profile-photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Current Position</h3>
+            <p>
+              I'm currently working as a Software Engineer at PT Bank Central
+              Asia, Tbk (BCA) in Jakarta, Indonesia, focusing on International
+              Business and Back Office (IBO) - GL Core & PSAK Team. I'm also
+              pursuing a Master's degree in Informatics at Universitas Pelita
+              Harapan, specializing in Artificial Intelligence, Reinforcement
+              Learning, and Quantitative Finance.
+            </p>
+
+            <h3>Work Experience</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-year">Jun 2023 - Present</span>
+                <span class="timeline-content"
+                  >Software Engineer @ PT Bank Central Asia, Tbk (BCA)</span
+                >
+              </li>
+              <li>
+                <span class="timeline-year">Feb 2022 – Jan 2023</span>
+                <span class="timeline-content"
+                  >Accountant (Part-Time) @ PT Catat Buku Indonesia</span
+                >
+              </li>
+              <li>
+                <span class="timeline-year">Aug 2022 – Dec 2022</span>
+                <span class="timeline-content"
+                  >ERP Consultant (Internship) @ HashMicro</span
+                >
+              </li>
+            </ul>
+
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-year">Sep 2024 - Present</span>
+                <span class="timeline-content"
+                  >Master of Informatics @ Universitas Pelita Harapan</span
+                >
+              </li>
+            </ul>
+
+            <h3>Research Interests</h3>
+            <div class="interests">
+              <span class="interest-tag">Large Language Models</span>
+              <span class="interest-tag">Reinforcement Learning</span>
+              <span class="interest-tag">Quantitative Finance</span>
+              <span class="interest-tag">Generative AI</span>
+              <span class="interest-tag">Blockchain</span>
+              <span class="interest-tag">Portfolio Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+      <div class="container">
+        <h2 class="section-title">Selected Publications</h2>
+        <div class="publications-list">
+          <article class="publication-item">
+            <div class="publication-header">
+              <h3 class="publication-title">
+                Hybrid LSTM and PPO Networks for Dynamic Portfolio Optimization
+              </h3>
+              <div class="publication-authors">
+                <strong>Jun Kevin</strong>, Pujianto Yugopuspito
+              </div>
+              <div class="publication-venue">
+                <em
+                  >2025 8th Artificial Intelligence and Cloud Computing
+                  Conference (AICCC)</em
+                >
+              </div>
+            </div>
+            <div class="publication-links">
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">BibTeX</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-header">
+              <h3 class="publication-title">
+                Crowdsource, Crawl, or Generate? Creating SEA-VL, a
+                Multicultural Vision-Language Dataset for Southeast Asia
+              </h3>
+              <div class="publication-authors">
+                Samuel Cahyawijaya, Holy Lovenia, ..., Alham Fikri Aji, Jostin
+                Jerico Rosal, <strong>Jun Kevin</strong>, Robert Wijaya, Onno P.
+                Kampman, Ruochen Zhang, Börje F. Karlsson, Peerat Limkonchotiwat
+              </div>
+              <div class="publication-venue">
+                <em>ACL 2025</em>
+              </div>
+            </div>
+            <div class="publication-links">
+              <a
+                href="https://doi.org/10.18653/v1/2025.acl-long.916"
+                class="pub-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Link</a
+              >
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">BibTeX</a>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-header">
+              <h3 class="publication-title">
+                SmartLLM: Smart Contract Auditing using Custom Generative AI
+              </h3>
+              <div class="publication-authors">
+                <strong>Jun Kevin</strong>, Pujianto Yugopuspito
+              </div>
+              <div class="publication-venue">
+                <em
+                  >2025 International Conference on Computer Science,
+                  Engineering and Technology (ICoCSET)</em
+                >
+              </div>
+            </div>
+            <div class="publication-links">
+              <a
+                href="https://doi.org/10.1109/ICoCSETI63724.2025.11019687"
+                class="pub-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Link</a
+              >
+              <a href="#" class="pub-link">PDF</a>
+              <a href="#" class="pub-link">BibTeX</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+          <p>You can download my full resume here:</p>
+          <a href="Jun Kevin_Resume.pdf" class="btn btn-primary" download
+            >Download Resume (PDF)</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <p>
+            If you are interested in a collaboration or a discussion, please
+            feel free to reach out to me.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:junkevin88@gmail.com" class="contact-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              junkevin88@gmail.com
+            </a>
+            <a
+              href="https://linkedin.com/in/jun-kevin"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://researchgate.net/profile/jun-kevin"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                />
+              </svg>
+              ResearchGate
+            </a>
+            <a
+              href="https://medium.com/@junkevin88"
+              class="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M2 12h20M2 6h20M2 18h20" />
+              </svg>
+              Medium
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span> Jun Kevin. All rights reserved.
+        </p>
+        <p class="footer-note">Powered by GitHub Pages</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
