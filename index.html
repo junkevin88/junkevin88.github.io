@@ -65,7 +65,8 @@
           <div class="hero-text">
             <h1 class="hero-title">Jun Kevin (萧大慧)</h1>
             <p class="hero-subtitle">
-              Software Engineer @ BCA | Master's Student @ UPH
+              Software Engineer @ BCA | Master's Student @ UPH (Universitas
+              Pelita Harapan)
             </p>
             <p class="hero-description">
               Master's student in Informatics at Universitas Pelita Harapan,
@@ -174,10 +175,6 @@
                 >
               </div>
             </div>
-            <div class="publication-links">
-              <a href="#" class="pub-link">PDF</a>
-              <a href="#" class="pub-link">BibTeX</a>
-            </div>
           </article>
 
           <article class="publication-item">
@@ -203,8 +200,6 @@
                 rel="noopener noreferrer"
                 >Link</a
               >
-              <a href="#" class="pub-link">PDF</a>
-              <a href="#" class="pub-link">BibTeX</a>
             </div>
           </article>
 
@@ -231,8 +226,6 @@
                 rel="noopener noreferrer"
                 >Link</a
               >
-              <a href="#" class="pub-link">PDF</a>
-              <a href="#" class="pub-link">BibTeX</a>
             </div>
           </article>
         </div>
@@ -244,9 +237,13 @@
       <div class="container">
         <h2 class="section-title">Resume</h2>
         <div class="resume-content">
-          <p>You can download my full resume here:</p>
-          <a href="Jun Kevin_Resume.pdf" class="btn btn-primary" download
-            >Download Resume (PDF)</a
+          <p>You can view my full resume here:</p>
+          <a
+            href="https://docs.google.com/document/d/1WZpFV18kEj5eyEW21gMcu_hp8-fWl2uC/edit?usp=sharing&ouid=103587575916279135943&rtpof=true&sd=true"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Resume</a
           >
         </div>
       </div>
@@ -279,7 +276,7 @@
               junkevin88@gmail.com
             </a>
             <a
-              href="https://linkedin.com/in/jun-kevin"
+              href="https://linkedin.com/in/junkevin06"
               class="contact-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -301,7 +298,7 @@
               LinkedIn
             </a>
             <a
-              href="https://researchgate.net/profile/jun-kevin"
+              href="https://www.researchgate.net/profile/Jun-Kevin?ev=hdr_xprf"
               class="contact-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -321,7 +318,7 @@
               ResearchGate
             </a>
             <a
-              href="https://medium.com/@junkevin88"
+              href="https://junkevin.medium.com"
               class="contact-link"
               target="_blank"
               rel="noopener noreferrer"
@@ -352,6 +349,91 @@
         <p class="footer-note">Powered by GitHub Pages</p>
       </div>
     </footer>
+
+    <!-- Audio Player -->
+    <div class="audio-player-container" id="audioPlayerContainer">
+      <button
+        class="audio-toggle"
+        id="audioToggle"
+        aria-label="Toggle audio player"
+      >
+        <span class="audio-icon">🎵</span>
+      </button>
+      <div class="audio-player" id="audioPlayerPanel">
+        <div class="audio-controls" id="audioControls">
+          <div class="audio-header">
+            <div class="audio-info">
+              <div class="audio-title" id="audioTitle">Punto y Aparte</div>
+              <div class="audio-artist" id="audioArtist">Morat</div>
+            </div>
+            <button
+              class="audio-btn-icon"
+              id="playlistToggleBtn"
+              aria-label="Toggle playlist"
+              title="Playlist"
+            >
+              <span>📋</span>
+            </button>
+          </div>
+          <audio id="audioPlayer" preload="metadata">
+            <!-- Audio source akan di-set oleh JavaScript -->
+            Your browser does not support the audio element.
+          </audio>
+          <div class="audio-progress-container">
+            <div class="audio-progress-bar" id="audioProgressBar">
+              <div class="audio-progress" id="audioProgress"></div>
+            </div>
+            <div class="audio-time">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+          <div class="audio-buttons">
+            <button
+              class="audio-btn"
+              id="prevBtn"
+              aria-label="Previous song"
+              title="Previous"
+            >
+              <span>⏮</span>
+            </button>
+            <button class="audio-btn" id="playPauseBtn" aria-label="Play/Pause">
+              <span id="playPauseIcon">▶</span>
+            </button>
+            <button
+              class="audio-btn"
+              id="nextBtn"
+              aria-label="Next song"
+              title="Next"
+            >
+              <span>⏭</span>
+            </button>
+            <button class="audio-btn" id="volumeBtn" aria-label="Volume">
+              <span id="volumeIcon">🔊</span>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              id="volumeSlider"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Volume control"
+              title="Volume"
+            />
+          </div>
+          <div class="playlist-container" id="playlistContainer">
+            <div class="playlist-header">
+              <h4>Playlist</h4>
+              <span class="playlist-count" id="playlistCount">0 songs</span>
+            </div>
+            <ul class="playlist" id="playlist">
+              <!-- Playlist items will be generated by JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>
