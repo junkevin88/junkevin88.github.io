@@ -246,6 +246,275 @@
         }
       }
 
+      /* Audio Player Styles */
+      .audio-player-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+
+      .audio-toggle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .audio-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .audio-player {
+        background: rgba(255, 255, 255, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        min-width: 280px;
+        max-width: 350px;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        pointer-events: auto;
+      }
+
+      .audio-player-container.collapsed .audio-player {
+        opacity: 0;
+        transform: translateY(10px) scale(0.95);
+        pointer-events: none;
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .audio-controls {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .audio-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .audio-info {
+        flex: 1;
+        text-align: left;
+        min-width: 0;
+      }
+
+      .audio-title {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.95rem;
+      }
+
+      .audio-artist {
+        font-size: 0.8rem;
+        color: #666;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .audio-btn-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        background: #f0f0f0;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .audio-btn-icon:hover {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        transform: scale(1.1);
+      }
+
+      .audio-progress-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .audio-progress-bar {
+        width: 100%;
+        height: 6px;
+        background: #e0e0e0;
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .audio-progress {
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 3px;
+        width: 0%;
+        transition: width 0.1s linear;
+      }
+
+      .audio-time {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.7rem;
+        color: #666;
+      }
+
+      .audio-buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .audio-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: none;
+        background: #f0f0f0;
+        color: #333;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .audio-btn:hover {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        transform: scale(1.1);
+      }
+
+      .volume-slider {
+        flex: 1;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      .volume-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .volume-slider::-moz-range-thumb {
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+      }
+
+      .playlist-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        margin-top: 0.5rem;
+      }
+
+      .playlist-container.show {
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      .playlist-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .playlist-header h4 {
+        font-size: 0.9rem;
+        color: #333;
+        margin: 0;
+      }
+
+      .playlist-count {
+        font-size: 0.75rem;
+        color: #666;
+      }
+
+      .playlist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .playlist-item {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 0.25rem;
+      }
+
+      .playlist-item:hover {
+        background: #f0f0f0;
+      }
+
+      .playlist-item.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .playlist-item-title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .playlist-item-artist {
+        font-size: 0.75rem;
+        opacity: 0.8;
+      }
+
       @media (max-width: 768px) {
         h1 {
           font-size: 2em;
@@ -260,6 +529,19 @@
         .gif-image {
           max-width: 200px;
           max-height: 200px;
+        }
+        .audio-player-container {
+          bottom: 10px;
+          right: 10px;
+        }
+        .audio-toggle {
+          width: 60px;
+          height: 60px;
+          font-size: 2rem;
+        }
+        .audio-player {
+          min-width: 250px;
+          max-width: 300px;
         }
       }
     </style>
@@ -287,6 +569,92 @@
     </div>
 
     <div class="celebration" id="celebration"></div>
+
+    <!-- Audio Player -->
+    <div class="audio-player-container collapsed" id="audioPlayerContainer">
+      <button
+        class="audio-toggle"
+        id="audioToggle"
+        aria-label="Toggle audio player"
+      >
+        <span class="audio-icon">🎵</span>
+      </button>
+      <div class="audio-player" id="audioPlayerPanel">
+        <div class="audio-controls" id="audioControls">
+          <div class="audio-header">
+            <div class="audio-info">
+              <div class="audio-title" id="audioTitle">Rewrite The Stars</div>
+              <div class="audio-artist" id="audioArtist">
+                Anne-Marie & James Arthur
+              </div>
+            </div>
+            <button
+              class="audio-btn-icon"
+              id="playlistToggleBtn"
+              aria-label="Toggle playlist"
+              title="Playlist"
+            >
+              <span>📋</span>
+            </button>
+          </div>
+          <audio id="audioPlayer" preload="metadata">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="audio-progress-container">
+            <div class="audio-progress-bar" id="audioProgressBar">
+              <div class="audio-progress" id="audioProgress"></div>
+            </div>
+            <div class="audio-time">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+          <div class="audio-buttons">
+            <button
+              class="audio-btn"
+              id="prevBtn"
+              aria-label="Previous song"
+              title="Previous"
+            >
+              <span>⏮</span>
+            </button>
+            <button class="audio-btn" id="playPauseBtn" aria-label="Play/Pause">
+              <span id="playPauseIcon">▶</span>
+            </button>
+            <button
+              class="audio-btn"
+              id="nextBtn"
+              aria-label="Next song"
+              title="Next"
+            >
+              <span>⏭</span>
+            </button>
+            <button class="audio-btn" id="volumeBtn" aria-label="Volume">
+              <span id="volumeIcon">🔊</span>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              id="volumeSlider"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Volume control"
+              title="Volume"
+            />
+          </div>
+          <div class="playlist-container" id="playlistContainer">
+            <div class="playlist-header">
+              <h4>Playlist</h4>
+              <span class="playlist-count" id="playlistCount">2 songs</span>
+            </div>
+            <ul class="playlist" id="playlist">
+              <!-- Playlist items will be generated by JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       let noClickCount = 0;
@@ -410,6 +778,254 @@
 
       // Initialize
       createFloatingHearts();
+
+      // Audio Player Functionality
+      const audioPlayerContainer = document.getElementById(
+        "audioPlayerContainer"
+      );
+      const audioToggle = document.getElementById("audioToggle");
+      const audioPlayer = document.getElementById("audioPlayer");
+      const playPauseBtn = document.getElementById("playPauseBtn");
+      const playPauseIcon = document.getElementById("playPauseIcon");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const volumeBtn = document.getElementById("volumeBtn");
+      const volumeIcon = document.getElementById("volumeIcon");
+      const volumeSlider = document.getElementById("volumeSlider");
+      const audioProgressBar = document.getElementById("audioProgressBar");
+      const audioProgress = document.getElementById("audioProgress");
+      const currentTimeDisplay = document.getElementById("currentTime");
+      const durationDisplay = document.getElementById("duration");
+      const playlistContainer = document.getElementById("playlistContainer");
+      const playlistToggleBtn = document.getElementById("playlistToggleBtn");
+      const playlist = document.getElementById("playlist");
+      const audioTitle = document.getElementById("audioTitle");
+      const audioArtist = document.getElementById("audioArtist");
+
+      // Playlist data
+      const playlistData = [
+        {
+          title: "Rewrite The Stars",
+          artist: "Anne-Marie & James Arthur",
+          src: "audio/Anne-Marie & James Arthur - Rewrite The Stars [from The Greatest Showman_ Reimagined].mp3",
+        },
+        {
+          title: "Happy Valentine",
+          artist: "Ed Sheeran & Taylor Swift",
+          src: "audio/Ed Sheeran & Taylor Swift - Happy Valentine (Official Music Video).mp3",
+        },
+      ];
+
+      let currentSongIndex = 0;
+      let isPlaylistVisible = false;
+      let wasPlaying = false;
+
+      // Format time helper
+      function formatTime(seconds) {
+        if (isNaN(seconds)) return "0:00";
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, "0")}`;
+      }
+
+      // Render playlist
+      function renderPlaylist() {
+        if (!playlist) return;
+        playlist.innerHTML = "";
+        playlistData.forEach((song, index) => {
+          const li = document.createElement("li");
+          li.className = "playlist-item";
+          if (index === currentSongIndex) {
+            li.classList.add("active");
+          }
+          li.innerHTML = `
+            <div class="playlist-item-title">${song.title}</div>
+            <div class="playlist-item-artist">${song.artist}</div>
+          `;
+          li.addEventListener("click", () => {
+            wasPlaying = !audioPlayer.paused;
+            currentSongIndex = index;
+            loadSong(currentSongIndex);
+            if (wasPlaying) {
+              audioPlayer.play().catch((e) => console.log("Play failed:", e));
+              playPauseIcon.textContent = "⏸";
+            }
+          });
+          playlist.appendChild(li);
+        });
+      }
+
+      // Load song
+      function loadSong(index) {
+        const song = playlistData[index];
+        audioPlayer.src = song.src;
+
+        // Update UI
+        if (audioTitle) audioTitle.textContent = song.title;
+        if (audioArtist) audioArtist.textContent = song.artist;
+
+        // Reset progress
+        if (audioProgress) audioProgress.style.width = "0%";
+        if (currentTimeDisplay) currentTimeDisplay.textContent = "0:00";
+        if (durationDisplay) durationDisplay.textContent = "0:00";
+
+        audioPlayer.load();
+
+        // Render playlist to update active state
+        renderPlaylist();
+      }
+
+      // Next Song
+      function nextSong() {
+        wasPlaying = !audioPlayer.paused;
+        if (currentSongIndex < playlistData.length - 1) {
+          currentSongIndex++;
+        } else {
+          currentSongIndex = 0; // Loop to first song
+        }
+        loadSong(currentSongIndex);
+        if (wasPlaying) {
+          audioPlayer.play().catch((e) => console.log("Play failed:", e));
+          playPauseIcon.textContent = "⏸";
+        }
+      }
+
+      // Previous Song
+      function prevSong() {
+        wasPlaying = !audioPlayer.paused;
+        if (currentSongIndex > 0) {
+          currentSongIndex--;
+        } else {
+          currentSongIndex = playlistData.length - 1; // Loop to last song
+        }
+        loadSong(currentSongIndex);
+        if (wasPlaying) {
+          audioPlayer.play().catch((e) => console.log("Play failed:", e));
+          playPauseIcon.textContent = "⏸";
+        }
+      }
+
+      // Initialize playlist
+      loadSong(0);
+
+      // Toggle audio player visibility
+      if (audioToggle && audioPlayerContainer) {
+        audioToggle.addEventListener("click", () => {
+          audioPlayerContainer.classList.toggle("collapsed");
+        });
+      }
+
+      // Toggle playlist visibility
+      if (playlistToggleBtn && playlistContainer) {
+        playlistToggleBtn.addEventListener("click", () => {
+          isPlaylistVisible = !isPlaylistVisible;
+          playlistContainer.classList.toggle("show", isPlaylistVisible);
+        });
+      }
+
+      // Next/Previous buttons
+      if (nextBtn) {
+        nextBtn.addEventListener("click", nextSong);
+      }
+
+      if (prevBtn) {
+        prevBtn.addEventListener("click", prevSong);
+      }
+
+      // Auto play next song when current ends
+      if (audioPlayer) {
+        audioPlayer.addEventListener("ended", () => {
+          wasPlaying = true;
+          nextSong();
+        });
+      }
+
+      // Play/Pause functionality
+      if (playPauseBtn && audioPlayer) {
+        playPauseBtn.addEventListener("click", () => {
+          if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseIcon.textContent = "⏸";
+          } else {
+            audioPlayer.pause();
+            playPauseIcon.textContent = "▶";
+          }
+        });
+      }
+
+      // Update progress bar
+      if (audioPlayer && audioProgress) {
+        audioPlayer.addEventListener("timeupdate", () => {
+          const progress =
+            (audioPlayer.currentTime / audioPlayer.duration) * 100;
+          audioProgress.style.width = progress + "%";
+
+          // Update current time
+          if (currentTimeDisplay) {
+            currentTimeDisplay.textContent = formatTime(
+              audioPlayer.currentTime
+            );
+          }
+        });
+
+        // Update duration
+        audioPlayer.addEventListener("loadedmetadata", () => {
+          if (durationDisplay) {
+            durationDisplay.textContent = formatTime(audioPlayer.duration);
+          }
+        });
+      }
+
+      // Seek functionality
+      if (audioProgressBar && audioPlayer) {
+        audioProgressBar.addEventListener("click", (e) => {
+          const rect = audioProgressBar.getBoundingClientRect();
+          const pos = (e.clientX - rect.left) / rect.width;
+          audioPlayer.currentTime = pos * audioPlayer.duration;
+        });
+      }
+
+      // Volume control
+      if (volumeSlider && audioPlayer) {
+        audioPlayer.volume = volumeSlider.value / 100;
+
+        volumeSlider.addEventListener("input", (e) => {
+          audioPlayer.volume = e.target.value / 100;
+
+          // Update volume icon
+          if (volumeIcon) {
+            if (e.target.value == 0) {
+              volumeIcon.textContent = "🔇";
+            } else if (e.target.value < 50) {
+              volumeIcon.textContent = "🔉";
+            } else {
+              volumeIcon.textContent = "🔊";
+            }
+          }
+        });
+      }
+
+      // Mute/Unmute button
+      if (volumeBtn && audioPlayer && volumeIcon) {
+        let previousVolume = 50;
+
+        volumeBtn.addEventListener("click", () => {
+          if (audioPlayer.volume > 0) {
+            previousVolume = audioPlayer.volume * 100;
+            audioPlayer.volume = 0;
+            volumeSlider.value = 0;
+            volumeIcon.textContent = "🔇";
+          } else {
+            audioPlayer.volume = previousVolume / 100;
+            volumeSlider.value = previousVolume;
+            if (previousVolume < 50) {
+              volumeIcon.textContent = "🔉";
+            } else {
+              volumeIcon.textContent = "🔊";
+            }
+          }
+        });
+      }
     </script>
   </body>
 </html>
