@@ -1,0 +1,99 @@
+{
+  "name": "@neabyte/idx-api",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "checkJs": false,
+    "exactOptionalPropertyTypes": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "lib": ["deno.ns", "deno.worker", "dom", "dom.asynciterable"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true
+  },
+  "fmt": {
+    "bracePosition": "sameLine",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "proseWrap": "preserve",
+    "semiColons": false,
+    "singleBodyPosition": "nextLine",
+    "singleQuote": true,
+    "spaceAround": false,
+    "spaceSurroundingProperties": true,
+    "trailingCommas": "never",
+    "useBraces": "always",
+    "useTabs": false
+  },
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["fresh", "jsr", "jsx", "react", "recommended", "workspace"],
+      "exclude": ["no-console", "no-external-import", "prefer-ascii", "prefer-primordials"]
+    }
+  },
+  "lock": true,
+  "nodeModulesDir": "auto",
+  "test": {
+    "include": ["tests/**/*.ts"],
+    "exclude": ["tests/**/*.d.ts"]
+  },
+  "tasks": {
+    "check": "deno fmt src/ && deno lint src/ && deno check src/",
+    "discover": "deno run --allow-net --allow-read --allow-write src/index.ts",
+    "sync": "deno run --allow-net --allow-read --allow-write scripts/sync.ts",
+    "ksei:import": "deno run --allow-read --allow-write scripts/import-ksei.ts",
+    "ownership:demo": "deno run --allow-read scripts/ownership-demo.ts",
+    "web": "deno run --allow-net --allow-read web/server.ts",
+    "test": "deno fmt tests/ && deno lint tests/ && deno test --allow-net --allow-write --allow-read --no-check",
+    "db:generate": "deno run -A npm:drizzle-kit generate",
+    "db:push": "deno run -A npm:drizzle-kit push",
+    "db:sync": "deno task db:generate --config drizzle.config.json && deno task db:push --config drizzle.config.json &&  deno run -A npm:drizzle-kit push --force"
+  },
+  "imports": {
+    "@db/sqlite": "jsr:@db/sqlite@^0.13.0",
+    "@libsql/client": "npm:@libsql/client@^0.17.0",
+    "@std/assert": "jsr:@std/assert@^1.0.18",
+    "@std/csv/parse": "jsr:@std/csv@^1.0.0/parse",
+    "@std/path": "jsr:@std/path@^1.1.0",
+    "hono": "jsr:@hono/hono@^4.0.0",
+    "@app/": "./src/",
+    "@data/": "./data/",
+    "@tests": "./tests/",
+    "drizzle-kit": "npm:drizzle-kit@^0.31.9",
+    "drizzle-orm": "npm:drizzle-orm@^0.45.1",
+    "drizzle-orm/sqlite-core": "npm:drizzle-orm@^0.45.1/sqlite-core"
+  },
+  "publish": {
+    "exclude": [
+      "*.bench.ts",
+      "*.spec.ts",
+      "*.test.ts",
+      ".github/",
+      "bench/",
+      "build.config.ts",
+      "coverage/",
+      "tests/"
+    ]
+  }
+}
