@@ -1,17 +1,18 @@
-# Deno
-.deno/
-deno.lock
-
-# Node
-node_modules/
-
-# IDE
-.vscode/
-.idea/
-
-# OS
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Local
-data/
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
